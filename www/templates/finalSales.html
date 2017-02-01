@@ -1,0 +1,25 @@
+<ion-view view-title="Title">
+	<ion-header-bar align-title="left" class="bar-positive">
+	  <div class="buttons">
+	    <button class="button button-icon ion-arrow-left-c" ng-click="back_to_sales()"></button>
+	  </div>
+	  <h1 class="title">Make sales</h1>
+	</ion-header-bar>
+  <ion-content overflow-scroll="false">
+  	<div class="row">
+  		<div class="col" id="col"><b>Name</b></div>
+  		<div class="col" id="col"><b>Quantity</b></div>
+  		<div class="col" id="col"><b>Price</b></div>
+  		<div class="col" id="col"></div>
+  	</div>
+  	<div class="row">
+  		<div class="col" id="col">Toothpaste</div>
+  		<div class="col" id="col">5</div>
+  		<div class="col" id="col">100</div>
+  		<div class="col"><span ng-click="remove()"><i class="icon ion-trash-a"></i> Remove</span></div>
+  	</div>
+  </ion-content>
+  <<ion-footer-bar align-title="center" class="bar-assertive" ng-click="done()">
+    <h1 class="title">Make sales <i class="icon ion-checkmark"></i></h1>
+  </ion-footer-bar>
+</ion-view>

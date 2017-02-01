@@ -1,0 +1,44 @@
+<ion-view view-title="Title">
+	<ion-header-bar align-title="left" class="bar-positive">
+  <div class="buttons">
+    <button class="button button-icon ion-arrow-left-c" ng-click="back()"></button>
+  </div>
+	  <h1 class="title" >Make Sales</h1>
+  <div class="buttons">
+    <button class="button button-icon button-right ion-search" ng-click="doSomething()"></button>
+  </div>
+	</ion-header-bar> 
+<div class="bar bar-header item-input-inset" ng-if ="display == true">
+  <label class="item-input-wrapper">
+    <i class="icon ion-ios-search placeholder-icon"></i>
+    <input type="search" placeholder="Search">
+  </label>
+  <button class="button button-positive" ng-click="closeSearch()">
+    Cancel
+  </button>
+</div>
+  <ion-content overflow-scroll="false">
+  		<div class="row">
+  			<div class="col" id="col"><h4>Name</h4></div>
+  			<div class="col" id="col"><h4>Quantity</h4></div>
+  			<div class="col" id="col"><h4>Amount (#)</h4></div>
+  			<div class="col" id="col"></div>
+  		</div>
+  		<div class="row">
+  			<div class="col" id="col">Toothpaste</div>
+  			<div class="col" id="col">13</div>
+  			<div class="col" id="col">100</div>
+  			<div class="col" id="col"><button class="button button-icon icon ion-archive" ng-click="addToCart(1)"></button></div>
+  		</div>
+  		<div class="row">
+  			<div class="col" id="col">Brush</div>
+  			<div class="col" id="col">10</div>
+  			<div class="col" id="col">50</div>
+  			<div class="col" id="col"><button class="button button-icon icon ion-archive" ng-click="addToCart(2)"></button></div>
+  		</div>
+  </ion-content>
+  <ion-footer-bar align-title="left" class="bar-positive" ng-if="is_cart_empty == true" ng-click="final_sales()" >
+  		<h1 class="title"><i class="icon ion-android-cart"></i> Make sales</h1>
+  		<button class="button button-clear"><b>{{num_of_product}}</b></button>
+  </ion-footer-bar>
+</ion-view>

@@ -1,0 +1,21 @@
+<ion-view view-title="Title">
+  <ion-header-bar align-title="center" class="bar-positive">
+  <div class="buttons">
+	  <button class="button button-icon ion-arrow-left-c" ng-click="back()"></button>	  	
+  </div>
+    <h1 class="title">Upload stock</h1>
+  </ion-header-bar> 	
+ 	<ion-content class="padding" overflow-scroll="false">
+ 		<h4 class="input-wrapper">
+  			your stock document must be in .xls format
+  		</h4>
+		<div class="list list-inset">
+			<label class="item item-input">
+				<input type="file" placeholder="select file" accept=".xls">
+			</label>
+			<button class="button button-block button-assertive">
+			Submit
+			</button>
+		</div>
+ 	</ion-content>
+</ion-view>
