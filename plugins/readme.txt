@@ -1,0 +1,1 @@
+plugins for the inventory management application
